@@ -7,3 +7,4 @@ endOfLine: lf
 printWidth: 85
 plugins:
   - prettier-plugin-tailwindcss
+
