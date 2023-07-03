@@ -2,8 +2,8 @@
 
 const Nav = () => {
   return (
-    <nav>
-      <ul className="text-l flex justify-between gap-8 font-montserrat tracking-wide text-text-light md:gap-14 md:text-2xl">
+    <nav className="w-3/4 sm:w-auto">
+      <ul className="text-l flex w-full justify-between font-montserrat tracking-wide text-text-light sm:gap-14 sm:text-2xl">
         <li className="transform cursor-pointer border-b-4 border-b-tertiary border-opacity-0 duration-500 hover:border-b-[scale-100] hover:border-opacity-100">
           Accueil
         </li>
