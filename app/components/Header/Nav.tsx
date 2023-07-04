@@ -16,7 +16,7 @@ const Nav = () => {
             Projets
           </li>
         </Link>
-        <Link href="/#about">
+        <Link href="/#about" scroll={false}>
           <li className="transform cursor-pointer border-b-4 border-b-tertiary border-opacity-0 duration-500 hover:border-b-[scale-100] hover:border-opacity-100">
             A propos
           </li>
