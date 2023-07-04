@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import photo from '~/public/image/photo_rodolphe_compress.png';
 
 const Hero = () => {
@@ -14,10 +15,10 @@ const Hero = () => {
         />
         <div className="flex flex-col items-center gap-[4vh] sm:w-[50vw]">
           <h1 className=" flex flex-col font-bebas-neue text-4xl tracking-widest text-secondary sm:text-[6vw] sm:leading-[6vw]">
-            <span className="mb-4 border-b-4 border-b-tertiary lg:border-b-8">
+            <span className="mb-4 underline decoration-tertiary underline-offset-4 lg:underline-offset-[10px]">
               Développeur
             </span>
-            <span className="self-end border-b-4 border-b-tertiary lg:border-b-8">
+            <span className="self-end underline decoration-tertiary underline-offset-4 lg:underline-offset-[10px]">
               Web
             </span>
           </h1>
@@ -31,9 +32,12 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <button className="mb-8 block w-3/4 scale-100 bg-tertiary px-4 py-2 font-montserrat text-xs text-white transition duration-500 hover:scale-105 hover:bg-tertiary-dark sm:max-w-xs md:px-8 md:py-4 md:text-base">
-        en savoir plus
-      </button>
+      <Link
+        href="/#projects"
+        className="mb-8 block w-2/5 scale-100 bg-secondary px-4 py-2 text-center font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:px-8 md:py-4 md:text-base"
+      >
+        En savoir plus
+      </Link>
     </section>
   );
 };

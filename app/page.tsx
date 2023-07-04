@@ -1,15 +1,18 @@
+import About from './components/About/About';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Projects from './components/Projects/Projects';
 
 export default function Home() {
   return (
     <>
-      <div className="h-screen">
+      <div className="mb-[5vh] h-screen">
         <Header />
         <Hero />
       </div>
-      <main className="flex justify-center">
-        <h1 className="font-bebas-neue text-6xl text-text-dark">Main</h1>
+      <main className="flex flex-col justify-center gap-12 sm:gap-24">
+        <Projects />
+        <About />
       </main>
     </>
   );
