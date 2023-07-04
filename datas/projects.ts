@@ -14,18 +14,8 @@ import espritNatureMin from '~/public/image/esprit_nature_min.png';
 import espritNatureWebp from '~/public/image/esprit_nature.webp';
 import quizKaamelottMin from '~/public/image/quiz_kaamelott_min.png';
 import quizKaamelottWebp from '~/public/image/quiz_kaamelott.webp';
-import htmlIcon from '~/public/icons/html5_small.png';
-import cssIcon from '~/public/icons/css3_small.png';
-import sassIcon from '~/public/icons/sass_small.png';
-import javascriptIcon from '~/public/icons/javascript_small.png';
-import typescriptIcon from '~/public/icons/typescript_small.png';
-import nodejsIcon from '~/public/icons/nodejs_small.png';
-import reactIcon from '~/public/icons/react_small.png';
-import mongodbIcon from '~/public/icons/mongodb_small.png';
-import mysqlIcon from '~/public/icons/mysql_small.png';
-import nextIcon from '~/public/icons/nextjs_small.png';
-import tailwindIcon from '~/public/icons/tailwind_small.png';
-import postgresqlIcon from '~/public/icons/postgresql_small.png';
+import type { Techno } from '~/datas/technos';
+import { technos } from '~/datas/technos';
 import type { StaticImageData } from 'next/image';
 
 export type Project = {
@@ -37,60 +27,23 @@ export type Project = {
   imgUrl: string;
   imgMin: StaticImageData;
   imgWebp: StaticImageData;
-  technos?: {
-    name: string;
-    icon: StaticImageData;
-  }[];
+  technos?: Techno[];
 };
 
-const html = {
-  name: 'HTML 5',
-  icon: htmlIcon,
-};
-const css = {
-  name: 'CSS 3',
-  icon: cssIcon,
-};
-const sass = {
-  name: 'Sass',
-  icon: sassIcon,
-};
-const js = {
-  name: 'Javascript',
-  icon: javascriptIcon,
-};
-const ts = {
-  name: 'Typescript',
-  icon: typescriptIcon,
-};
-const nodejs = {
-  name: 'Node JS',
-  icon: nodejsIcon,
-};
-const react = {
-  name: 'React JS',
-  icon: reactIcon,
-};
-const mongodb = {
-  name: 'Mongo DB',
-  icon: mongodbIcon,
-};
-const mysql = {
-  name: 'MySQL',
-  icon: mysqlIcon,
-};
-const nextjs = {
-  name: 'Next JS',
-  icon: nextIcon,
-};
-const tailwind = {
-  name: 'Tailwind CSS',
-  icon: tailwindIcon,
-};
-const postgresql = {
-  name: 'PostgreSQL',
-  icon: postgresqlIcon,
-};
+const {
+  html,
+  css,
+  sass,
+  tailwind,
+  js,
+  ts,
+  react,
+  nextjs,
+  nodejs,
+  mongodb,
+  mysql,
+  postgresql,
+} = technos;
 
 export const projects: Project[] = [
   {
