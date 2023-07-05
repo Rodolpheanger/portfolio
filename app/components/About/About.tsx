@@ -28,7 +28,7 @@ const About = () => {
               className="flex flex-col items-center text-xs text-text-light sm:text-base"
             >
               <Image
-                className="h-7 w-7 sm:h-12 sm:w-12"
+                className="h-7 w-7 hover:scale-110 sm:h-12 sm:w-12"
                 src={techno.icon}
                 alt={`Icône ${techno.name}`}
                 width={96}

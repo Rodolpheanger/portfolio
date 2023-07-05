@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: Props) => {
       <h3 className="font-montserrat text-xl font-bold text-text-light sm:text-2xl">
         {project.name}
       </h3>
-      <div className="">
+      <div>
         {!showDescription && (
           <Image
             src={project.img}
@@ -34,13 +34,12 @@ const ProjectCard = ({ project }: Props) => {
           />
         )}
         {showDescription && (
-          <div className="flex aspect-video flex-col items-center justify-between gap-2 bg-white/10 p-6 font-montserrat text-xs text-text-light sm:p-8 sm:text-base">
-            <p className="text-justify">{project.description}</p>
+          <div className="flex aspect-video flex-col items-center justify-between gap-2 bg-white/10 p-4 font-montserrat text-xs text-text-light sm:p-8 sm:text-base">
+            <p className="text-justify">
+              <span>{project.date}</span> - {project.description}
+            </p>
             {project.technos && (
               <div className="text-center">
-                <h4 className="p-2 text-sm font-semibold underline sm:text-lg">
-                  Technos utilisées:
-                </h4>
                 <div className="mb-4 flex justify-center gap-5 ">{technos}</div>
               </div>
             )}
@@ -48,14 +47,14 @@ const ProjectCard = ({ project }: Props) => {
             <div className="flex w-full items-center justify-center gap-6 text-white">
               {project.gitHubUrl && (
                 <Link href={project.gitHubUrl} target="_blank">
-                  <button className="bg-text-dark px-6 py-2 transition duration-500 hover:bg-text-dark/50">
+                  <button className="bg-text-dark px-6 py-1 transition duration-500 hover:bg-text-dark/50">
                     Vers le GitHub
                   </button>
                 </Link>
               )}
               {project.webSiteUrl && (
                 <Link href={project.webSiteUrl} target="_blank">
-                  <button className="bg-text-dark px-6 py-2 transition duration-500 hover:bg-text-dark/50">
+                  <button className="bg-text-dark px-6 py-1 transition duration-500 hover:bg-text-dark/50">
                     Vers le site
                   </button>
                 </Link>
@@ -67,7 +66,7 @@ const ProjectCard = ({ project }: Props) => {
 
       <button
         onClick={() => setShowDescription(!showDescription)}
-        className="w-1/2 scale-100 bg-secondary px-4 py-2 font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:text-base "
+        className="scale-100 bg-secondary px-10 py-2 font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base "
       >
         {showDescription ? "Revenir à l'image" : 'En savoir plus'}
       </button>

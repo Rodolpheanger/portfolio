@@ -46,15 +46,15 @@ export const technos = {
     icon: typescriptIcon,
   },
   nodejs: {
-    name: 'Node JS',
+    name: 'Node.js',
     icon: nodejsIcon,
   },
   react: {
-    name: 'React JS',
+    name: 'React',
     icon: reactIcon,
   },
   nextjs: {
-    name: 'Next JS',
+    name: 'Next.js',
     icon: nextIcon,
   },
   tailwind: {

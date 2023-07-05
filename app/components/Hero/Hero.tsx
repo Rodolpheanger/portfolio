@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import photo from '~/public/image/photo_rodolphe.png';
+import ScrollToId from '../ScrollTo/ScrollToId';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center h-5/6 justify-evenly">
+    <section className="flex h-5/6 flex-col items-center justify-evenly">
       <div className=" flex flex-col items-center gap-[4vh] sm:w-4/5 sm:flex-row">
         <Image
           src={photo}
@@ -13,7 +13,7 @@ const Hero = () => {
           alt="Photo de moi"
           className="w-1/2 sm:w-[25vw]"
         />
-        <div className="flex flex-col items-center gap-[4vh] sm:w-[50vw]">
+        <div className="flex flex-col  items-center gap-[4vh]">
           <h1 className=" flex flex-col font-bebas-neue text-4xl tracking-widest text-secondary sm:text-[6vw] sm:leading-[6vw]">
             <span className="mb-4 underline decoration-tertiary underline-offset-4 lg:underline-offset-[10px]">
               Développeur
@@ -32,12 +32,11 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <Link
-        href="/#projects"
-        className="block w-2/5 px-4 py-2 mb-8 text-xs text-center transition duration-500 scale-100 bg-secondary font-montserrat hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:text-base"
-      >
-        En savoir plus
-      </Link>
+      <ScrollToId to="projects" smooth="easeInOutCubic" duration={500} offset={-25}>
+        <div className="mb-8 block scale-100 cursor-pointer bg-secondary px-10 py-2 text-center font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base">
+          En savoir plus
+        </div>
+      </ScrollToId>
     </section>
   );
 };
