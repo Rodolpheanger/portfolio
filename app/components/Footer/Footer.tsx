@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import linkedInIcon from '~/public/icons/linkedin_small.png';
-import mailIcon from '~/public/icons/mail_small.png';
-import gitHubIcon from '~/public/icons/github_small.png';
+import linkedInIcon from '~/public/icons/linkedin.png';
+import mailIcon from '~/public/icons/mail.png';
+import gitHubIcon from '~/public/icons/github.png';
 
 const Footer = () => (
   <footer className="flex flex-col items-center justify-center gap-6 bg-text-dark p-4 sm:p-10">

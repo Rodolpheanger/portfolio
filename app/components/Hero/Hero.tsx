@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import photo from '~/public/image/photo_rodolphe_compress.png';
+import photo from '~/public/image/photo_rodolphe.png';
 
 const Hero = () => {
   return (
-    <section className="flex h-5/6 flex-col items-center justify-evenly">
+    <section className="flex flex-col items-center h-5/6 justify-evenly">
       <div className=" flex flex-col items-center gap-[4vh] sm:w-4/5 sm:flex-row">
         <Image
           src={photo}
@@ -34,7 +34,7 @@ const Hero = () => {
       </div>
       <Link
         href="/#projects"
-        className="mb-8 block w-2/5 scale-100 bg-secondary px-4 py-2 text-center font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:px-8 md:py-4 md:text-base"
+        className="block w-2/5 px-4 py-2 mb-8 text-xs text-center transition duration-500 scale-100 bg-secondary font-montserrat hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:text-base"
       >
         En savoir plus
       </Link>

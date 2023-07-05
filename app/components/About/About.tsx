@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import type { Techno } from '~/datas/technos';
 import { technos } from '~/datas/technos';
-import pdfIcon from '~/public/icons/pdf_big.png';
+import pdfIcon from '~/public/icons/pdf.png';
 
 const About = () => {
   const technosArray: Techno[] = Object.entries(technos).map(([, value]) => ({
@@ -50,7 +50,7 @@ const About = () => {
           target="_blank"
           className="flex flex-col items-center gap-4"
         >
-          <button className="w-full scale-100 bg-secondary px-4 py-2 font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:px-8 md:py-4 md:text-base">
+          <button className="w-full scale-100 bg-secondary px-8 py-2 font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:text-base">
             Télécharger
           </button>
         </Link>
