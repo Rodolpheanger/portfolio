@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import type { Project } from '~/datas/projects';
@@ -9,9 +9,10 @@ type Props = {
 };
 const ProjectCard = ({ project }: Props) => {
   const [showDescription, setShowDescription] = useState(false);
+  const cardRef = useRef<HTMLDivElement>(null);
   const technos = project.technos?.map((techno) => (
     <Image
-      className="h-7 w-7 sm:h-12 sm:w-12"
+      className="h-7 w-7 cursor-help sm:h-12 sm:w-12"
       key={techno.name}
       src={techno.icon}
       alt={`Icône ${techno.name}`}
@@ -20,8 +21,26 @@ const ProjectCard = ({ project }: Props) => {
       height={50}
     />
   ));
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      for (const entry of entries) {
+        if (cardRef.current && entry.isIntersecting) {
+          cardRef.current.classList.add(
+            'odd:animate-appear-left',
+            'even:animate-appear-right'
+          );
+          observer.unobserve(cardRef.current);
+        }
+      }
+    });
+
+    cardRef.current && observer.observe(cardRef.current);
+  }, []);
   return (
-    <div className="flex w-full max-w-[600px] flex-col items-center justify-center gap-5 sm:gap-10">
+    <div
+      ref={cardRef}
+      className="flex w-full max-w-[600px] flex-col items-center justify-center gap-5 opacity-0 sm:gap-10"
+    >
       <h3 className="font-montserrat text-xl font-bold text-text-light sm:text-2xl">
         {project.name}
       </h3>

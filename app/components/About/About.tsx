@@ -3,6 +3,7 @@ import Link from 'next/link';
 import type { Techno } from '~/datas/technos';
 import { technos } from '~/datas/technos';
 import pdfIcon from '~/public/icons/pdf.png';
+import AboutTechnos from './AboutTechnos';
 
 const About = () => {
   const technosArray: Techno[] = Object.entries(technos).map(([, value]) => ({
@@ -23,19 +24,7 @@ const About = () => {
         </h3>
         <div className="flex flex-wrap items-center justify-center gap-8 bg-white/10 p-4 md:w-2/3 md:p-10 xl:w-1/3">
           {technosArray.map((techno) => (
-            <div
-              key={techno.name}
-              className="flex flex-col items-center text-xs text-text-light sm:text-base"
-            >
-              <Image
-                className="h-7 w-7 hover:scale-110 sm:h-12 sm:w-12"
-                src={techno.icon}
-                alt={`Icône ${techno.name}`}
-                width={96}
-                height={96}
-              />
-              <p>{techno.name}</p>
-            </div>
+            <AboutTechnos key={techno.name} techno={techno} />
           ))}
         </div>
       </div>
