@@ -10,6 +10,7 @@ const AboutTechnos = ({ techno }: { techno: Techno }) => {
     const observer = new IntersectionObserver((entries) => {
       for (const entry of entries) {
         if (technoRef.current && entry.isIntersecting) {
+          technoRef.current.classList.remove('opacity-0');
           technoRef.current.classList.add(
             'odd:animate-appear-spin-left',
             'even:animate-appear-spin-right'
@@ -27,7 +28,7 @@ const AboutTechnos = ({ techno }: { techno: Techno }) => {
   return (
     <div
       ref={technoRef}
-      className="flex origin-[50%_30%] flex-col items-center text-xs text-text-light sm:text-base"
+      className="flex origin-[50%_30%] flex-col items-center text-xs text-text-light opacity-0 sm:text-base"
     >
       <Image
         className="h-7 w-7 sm:h-12 sm:w-12"
@@ -36,7 +37,9 @@ const AboutTechnos = ({ techno }: { techno: Techno }) => {
         width={96}
         height={96}
       />
-      <p ref={technoNameRef}>{techno.name}</p>
+      <p ref={technoNameRef} className="opacity-0">
+        {techno.name}
+      </p>
     </div>
   );
 };

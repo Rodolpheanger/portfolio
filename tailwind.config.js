@@ -23,21 +23,21 @@ module.exports = {
       keyframes: {
         'appear-left': {
           '0%': { transform: 'translateX(-50vw) scale(0)', opacity: '0' },
-          '50%': { transform: 'translateX(-25vw)  scale(0.15)', opacity: '0.25' },
+          '50%': { transform: 'translateX(-25vw)  scale(0.25)', opacity: '0.15' },
           '100%': { transform: 'translateX(0) scale(1)', opacity: '1' },
         },
         'appear-right': {
           '0%': { transform: 'translateX(50vw) scale(0)', opacity: '0' },
-          '50%': { transform: 'translateX(25vw)  scale(0.15)', opacity: '0.25' },
+          '50%': { transform: 'translateX(25vw)  scale(0.25)', opacity: '0.15' },
           '100%': { transform: 'translateX(0) scale(1)', opacity: '1' },
         },
         'appear-spin-left': {
-          '0%': { transform: 'rotate(0deg) scale(0)' },
-          '100%': { transform: 'rotate(-1800deg) scale(1)' },
+          '0%': { transform: 'rotate(0deg) scale(0)', opacity: '0' },
+          '100%': { transform: 'rotate(-1800deg) scale(1)', opacity: '1' },
         },
         'appear-spin-right': {
-          '0%': { transform: 'rotate(0deg) scale(0)' },
-          '100%': { transform: 'rotate(1800deg) scale(1)' },
+          '0%': { transform: 'rotate(0deg) scale(0)', opacity: '0' },
+          '100%': { transform: 'rotate(1800deg) scale(1)', opacity: '1' },
         },
         'appear-scale': {
           '0%': { transform: 'scale(0)', opacity: '0' },
