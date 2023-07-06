@@ -46,7 +46,7 @@ const About = () => {
 
         <Image src={pdfIcon} alt="CV" width={96} height={96} />
         <Link
-          href="/CV_Rodolphe_ANGER.pdf"
+          href="/documents/CV_Rodolphe_ANGER.pdf"
           target="_blank"
           className="flex flex-col items-center gap-4"
         >
