@@ -35,8 +35,10 @@ const Footer = () => (
         />
       </Link>
     </div>
+
     <p className="text-center text-xs text-white sm:text-base">
-      🤘 © 2023 Rodolphe ANGER 🤘
+      <span className="inline-block animate-bounce">🤘</span> © 2023 Rodolphe ANGER{' '}
+      <span className="inline-block animate-bounce">🤘</span>
     </p>
   </footer>
 );
