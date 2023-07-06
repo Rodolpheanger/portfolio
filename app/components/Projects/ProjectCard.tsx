@@ -22,17 +22,20 @@ const ProjectCard = ({ project }: Props) => {
     />
   ));
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      for (const entry of entries) {
-        if (cardRef.current && entry.isIntersecting) {
-          cardRef.current.classList.add(
-            'odd:animate-appear-left',
-            'even:animate-appear-right'
-          );
-          observer.unobserve(cardRef.current);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (cardRef.current && entry.isIntersecting) {
+            cardRef.current.classList.add(
+              'odd:animate-appear-left',
+              'even:animate-appear-right'
+            );
+            observer.unobserve(cardRef.current);
+          }
         }
-      }
-    });
+      },
+      { rootMargin: '-175px' }
+    );
 
     cardRef.current && observer.observe(cardRef.current);
   }, []);
