@@ -23,7 +23,7 @@ const AboutTechnos = ({ techno }: { techno: Techno }) => {
           }
         }
       },
-      { rootMargin: '-50px' }
+      { rootMargin: '-6%' }
     );
 
     technoRef.current && observer.observe(technoRef.current);

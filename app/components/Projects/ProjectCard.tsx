@@ -34,7 +34,7 @@ const ProjectCard = ({ project }: Props) => {
           }
         }
       },
-      { rootMargin: '-175px' }
+      { rootMargin: '-20%' }
     );
 
     cardRef.current && observer.observe(cardRef.current);
