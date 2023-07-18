@@ -25,9 +25,8 @@ const Hero = () => {
           <p className="w-3/4 gap-[4vh] text-justify font-montserrat text-xs text-text-light sm:text-base">
             Salut, moi c’est{' '}
             <span className="font-bold text-secondary">Rodolphe</span>, passionné
-            d’informatique et ayant déjà eu l’occasion de me frotter aux joies du
-            code, j’ai entamé une reconversion en 2021 après 20 ans dans
-            l'automobile.. Depuis l’obtention de mon diplôme, je me perfectionne au
+            d’informatique, j’ai entamé une reconversion en 2021 après 20 ans dans
+            l'automobile. Depuis l’obtention de mon diplôme, je me perfectionne au
             quotidien dans diverses technologies du développement web...
           </p>
         </div>
