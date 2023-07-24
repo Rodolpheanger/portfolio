@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 
 export const metadata = {
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className="overflow-x-hidden background-gradient">{children}</body>
+      <body className="background-gradient overflow-x-hidden">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

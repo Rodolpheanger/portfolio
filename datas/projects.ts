@@ -6,8 +6,8 @@ import hotTakes from '~/public/image/hot_takes.png';
 import groupomania from '~/public/image/groupomania.png';
 import espritNature from '~/public/image/esprit_nature.png';
 import quizKaamelott from '~/public/image/quiz_kaamelott.png';
-import type { Techno } from '~/datas/technos';
 import { technos } from '~/datas/technos';
+import type { Techno } from '~/datas/technos';
 import type { StaticImageData } from 'next/image';
 
 export type Project = {

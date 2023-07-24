@@ -32,7 +32,7 @@ const AboutTechnos = ({ techno }: { techno: Techno }) => {
   return (
     <div
       ref={technoRef}
-      className="flex origin-[50%_30%] flex-col items-center text-xs text-text-light opacity-0 sm:text-base"
+      className="flex origin-[50%_30%] flex-col items-center text-xs text-text-light opacity-0  sm:text-base"
     >
       <Image
         className="h-7 w-7 sm:h-12 sm:w-12"

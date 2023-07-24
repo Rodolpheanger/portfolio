@@ -22,7 +22,7 @@ const About = () => {
         <h3 className="font-montserrat text-xl font-bold text-text-light underline sm:text-2xl">
           Mes Technos & Outils
         </h3>
-        <div className="flex flex-wrap items-center justify-center gap-8 bg-white/10 p-4 md:w-2/3 md:p-10 xl:w-1/3">
+        <div className="flex flex-wrap items-center justify-center gap-8 bg-white/10 p-4 backdrop-blur-sm md:w-2/3 md:p-10 xl:w-1/3">
           {technosArray.map((techno) => (
             <AboutTechnos key={techno.name} techno={techno} />
           ))}
