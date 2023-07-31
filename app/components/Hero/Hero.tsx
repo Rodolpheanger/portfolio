@@ -24,10 +24,17 @@ const Hero = () => {
           </h1>
           <p className="w-3/4 gap-[4vh] text-justify font-montserrat text-xs text-text-light sm:text-base">
             Salut, moi c’est{' '}
-            <span className="font-bold text-secondary">Rodolphe</span>, passionné
-            d’informatique, j’ai entamé une reconversion en 2021 après 20 ans dans
-            l'automobile. Depuis l’obtention de mon diplôme, je me perfectionne au
-            quotidien dans diverses technologies du développement web...
+            <span className="font-bold text-secondary">Rodolphe</span> ! <br />
+            Après 20 ans de bons et loyaux services dans l'après-vente automobile,
+            j’ai décidé de prendre un virage à 180 degrés en 2021 et de me lancer
+            dans une reconversion professionnelle. <br />
+            Passionné d'informatique, j'ai plongé tête la première dans le monde
+            merveilleux de la programmation web et je suis devenu accro. <br />
+            J'ai donc décidé d'aller plus loin et de participer à une formation de
+            développeur web avec OpenClassrooms. Et devinez quoi ? Non seulement j'ai
+            adoré, mais en plus j'ai obtenu mon diplôme !<br />
+            Depuis, je me perfectionne quotidiennement dans diverses technologies du
+            développement web, tout en cherchant mon premier emploi dans ce domaine.
           </p>
         </div>
       </div>

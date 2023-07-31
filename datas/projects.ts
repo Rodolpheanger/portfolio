@@ -6,6 +6,7 @@ import hotTakes from '~/public/image/hot_takes.png';
 import groupomania from '~/public/image/groupomania.png';
 import espritNature from '~/public/image/esprit_nature.png';
 import quizKaamelott from '~/public/image/quiz_kaamelott.png';
+import portfolio from '~/public/image/portfolio.png';
 import { technos } from '~/datas/technos';
 import type { Techno } from '~/datas/technos';
 import type { StaticImageData } from 'next/image';
@@ -119,5 +120,15 @@ export const projects: Project[] = [
     webSiteUrl: 'https://quiz-kaamelott.rodolpheanger.fr',
     img: quizKaamelott,
     technos: [nextjs, react, ts, tailwind, postgresql],
+  },
+  {
+    id: 10,
+    name: 'Portfolio',
+    date: 2023,
+    description:
+      "Le portfolio sur lequel vous naviguez ! Je l'ai voulu relativement sobre avec quelques animations sympas mais pas trop exagérées afin de sauvegarder les yeux des mes visiteurs, c'est à dire les votre. J’espère avoir réussi ! 😁",
+    webSiteUrl: 'https://rodolpheanger.fr',
+    img: portfolio,
+    technos: [nextjs, react, ts, tailwind],
   },
 ];

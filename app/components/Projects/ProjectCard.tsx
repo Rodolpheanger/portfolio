@@ -42,7 +42,7 @@ const ProjectCard = ({ project }: Props) => {
   return (
     <div
       ref={cardRef}
-      className="flex w-full max-w-[600px] flex-col items-center justify-center gap-5 opacity-0 sm:gap-10"
+      className="flex w-full max-w-[600px] flex-col items-center justify-center gap-5  opacity-0 sm:gap-10"
     >
       <h3 className="font-montserrat text-xl font-bold text-text-light sm:text-2xl">
         {project.name}
@@ -52,11 +52,11 @@ const ProjectCard = ({ project }: Props) => {
           <Image
             src={project.img}
             alt={`Miniature du projet ${project.name}`}
-            className="aspect-video object-cover object-top"
+            className="aspect-video border-[1px] border-slate-700 object-cover object-top "
           />
         )}
         {showDescription && (
-          <div className="flex aspect-video flex-col items-center justify-between gap-2 bg-white/10 p-4 font-montserrat text-xs text-text-light sm:p-8 sm:text-base">
+          <div className="flex aspect-video flex-col items-center justify-between gap-2 border-[1px] border-slate-700 bg-white/10 p-4 font-montserrat text-xs text-text-light sm:p-8 sm:text-base">
             <p className="text-justify">
               <span>{project.date}</span> - {project.description}
             </p>
