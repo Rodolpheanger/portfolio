@@ -35,6 +35,10 @@ const {
   mongodb,
   mysql,
   postgresql,
+  figma,
+  tanstackQuery,
+  zod,
+  prisma,
 } = technos;
 
 export const projects: Project[] = [
@@ -119,7 +123,7 @@ export const projects: Project[] = [
       "MVP d'une application de quiz sur les citations de la série 'Kaamelott'. Une citation aléatoire issue de la base de données est affichée, ainsi que quatre choix pour le personnage à l'origine de la citation et l'utilisateur doit trouver la bonne réponse.",
     webSiteUrl: 'https://quiz-kaamelott.rodolpheanger.fr',
     img: quizKaamelott,
-    technos: [nextjs, react, ts, tailwind, postgresql],
+    technos: [nextjs, react, tanstackQuery, zod, prisma, ts, tailwind, postgresql],
   },
   {
     id: 10,
@@ -129,6 +133,6 @@ export const projects: Project[] = [
       "Le portfolio sur lequel vous naviguez ! Je l'ai voulu relativement sobre avec quelques animations sympas mais pas trop exagérées afin de sauvegarder les yeux des mes visiteurs, c'est à dire les votre. J’espère avoir réussi ! 😁",
     webSiteUrl: 'https://rodolpheanger.fr',
     img: portfolio,
-    technos: [nextjs, react, ts, tailwind],
+    technos: [nextjs, react, ts, tailwind, figma],
   },
 ];

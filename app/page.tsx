@@ -8,7 +8,7 @@ import ScrollToTopButton from './components/ScrollTo/ScrollToTopButton';
 export default function Home() {
   return (
     <>
-      <div className="mb-[5vh] h-screen">
+      <div className="sm:mb-[5vh] sm:h-screen">
         <Header />
         <Hero />
       </div>

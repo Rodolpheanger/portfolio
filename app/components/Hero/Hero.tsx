@@ -39,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
       <ScrollToId to="projects" smooth="easeInOutCubic" duration={500} offset={-25}>
-        <div className="mb-8 block scale-100 cursor-pointer bg-secondary px-10 py-2 text-center font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base">
+        <div className="mb-8 mt-8 block scale-100 cursor-pointer bg-secondary px-10 py-2 text-center font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base">
           En savoir plus
         </div>
       </ScrollToId>

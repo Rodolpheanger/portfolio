@@ -17,6 +17,10 @@ import yarnIcon from '~/public/icons/yarn.png';
 import gitIcon from '~/public/icons/git.png';
 import gitHubIcon from '~/public/icons/github.png';
 import vscodeIcon from '~/public/icons/vscode.png';
+import figma from '~/public/icons/figma.png';
+import tanstackQuery from '~/public/icons/tanstack_query.png';
+import zod from '~/public/icons/zod.png';
+import prisma from '~/public/icons/prisma.png';
 import type { StaticImageData } from 'next/image';
 
 export type Techno = {
@@ -56,6 +60,18 @@ export const technos = {
   nextjs: {
     name: 'Next.js',
     icon: nextIcon,
+  },
+  tanstackQuery: {
+    name: 'Tanstack Query',
+    icon: tanstackQuery,
+  },
+  zod: {
+    name: 'Zod',
+    icon: zod,
+  },
+  prisma: {
+    name: 'Prisma',
+    icon: prisma,
   },
   tailwind: {
     name: 'Tailwind CSS',
@@ -100,5 +116,9 @@ export const technos = {
   vscode: {
     name: 'VS Code',
     icon: vscodeIcon,
+  },
+  figma: {
+    name: 'Figma',
+    icon: figma,
   },
 };
