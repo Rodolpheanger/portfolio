@@ -1,20 +1,33 @@
+'use client';
+
+import { useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { projects } from '~/datas/projects';
 
 const Projects = () => {
+
+  const [reversedProjects, setReversedProjects] = useState(projects.reverse().slice(0, 4));
+  const [showButton, setShowButton] = useState(true);
+
+  const handleClick = () => {
+    setReversedProjects(projects.reverse());
+    setShowButton(false);
+  };
+
   return (
     <section
       id="projects"
-      className="flex flex-col items-center justify-center gap-12 sm:gap-24"
+      className="flex flex-col items-center justify-center gap-12 sm:gap-24 "
     >
       <h2 className=" font-bebas-neue text-4xl text-text-light underline decoration-tertiary underline-offset-8 sm:text-6xl lg:underline-offset-[10px]">
         Mes Projets
       </h2>
       <div className="flex flex-col items-center justify-center gap-16 lg:flex-row lg:flex-wrap">
-        {projects.map((project) => (
+        {reversedProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
-        ))}
+          ))}
       </div>
+      {showButton && <button className='px-10 py-2 text-xs transition duration-500 scale-100 bg-secondary font-montserrat hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base ' onClick = {handleClick}>Voir tous les projets</button>}
     </section>
   );
 };

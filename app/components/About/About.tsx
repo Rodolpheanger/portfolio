@@ -19,17 +19,17 @@ const About = () => {
         A propos
       </h2>
       <div className="flex flex-col items-center justify-center gap-4 sm:gap-8">
-        <h3 className="font-montserrat text-xl font-bold text-text-light underline sm:text-2xl">
+        <h3 className="text-xl font-bold underline font-montserrat text-text-light sm:text-2xl">
           Mes Technos & Outils
         </h3>
-        <div className="flex flex-wrap items-center justify-center gap-8 bg-white/10 p-4 backdrop-blur-sm md:w-2/3 md:p-10 xl:w-1/3">
+        <div className="flex flex-wrap items-center justify-center gap-8 p-4 bg-white/10 backdrop-blur-sm md:w-2/3 md:p-10 xl:w-1/3">
           {technosArray.map((techno) => (
             <AboutTechnos key={techno.name} techno={techno} />
           ))}
         </div>
       </div>
-      <div className="flex w-full flex-col items-center justify-center gap-4 sm:gap-8">
-        <h3 className="font-montserrat text-xl font-bold text-text-light underline sm:text-2xl">
+      <div className="flex flex-col items-center justify-center w-full gap-4 sm:gap-8">
+        <h3 className="text-xl font-bold underline font-montserrat text-text-light sm:text-2xl">
           Mon CV
         </h3>
 
@@ -39,7 +39,7 @@ const About = () => {
           target="_blank"
           className="flex flex-col items-center gap-4"
         >
-          <button className="w-full scale-100 bg-secondary px-8 py-2 font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:text-base">
+          <button className="w-full px-8 py-2 text-xs transition duration-500 scale-100 bg-secondary font-montserrat hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs md:text-base">
             Télécharger
           </button>
         </Link>
