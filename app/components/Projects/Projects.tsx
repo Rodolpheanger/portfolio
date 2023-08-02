@@ -5,13 +5,14 @@ import ProjectCard from './ProjectCard';
 import { projects } from '~/datas/projects';
 
 const Projects = () => {
-
-  const [reversedProjects, setReversedProjects] = useState(projects.reverse().slice(0, 4));
-  const [showButton, setShowButton] = useState(true);
+  const [reversedProjects, setReversedProjects] = useState(
+    projects.reverse().slice(0, 4)
+  );
+  const [showAllButton, setShowAllButton] = useState(true);
 
   const handleClick = () => {
     setReversedProjects(projects.reverse());
-    setShowButton(false);
+    setShowAllButton(false);
   };
 
   return (
@@ -25,9 +26,16 @@ const Projects = () => {
       <div className="flex flex-col items-center justify-center gap-16 lg:flex-row lg:flex-wrap">
         {reversedProjects.map((project) => (
           <ProjectCard key={project.id} project={project} />
-          ))}
+        ))}
       </div>
-      {showButton && <button className='px-10 py-2 text-xs transition duration-500 scale-100 bg-secondary font-montserrat hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base ' onClick = {handleClick}>Voir tous les projets</button>}
+      {showAllButton && (
+        <button
+          className="scale-100 bg-secondary px-10 py-2 font-montserrat text-xs transition duration-500 hover:scale-105 hover:bg-tertiary hover:text-white sm:max-w-xs sm:px-20 md:text-base "
+          onClick={handleClick}
+        >
+          Voir tous les projets
+        </button>
+      )}
     </section>
   );
 };
