@@ -131,7 +131,7 @@ export const projects: Project[] = [
     date: 2023,
     description:
       "Le portfolio sur lequel vous naviguez ! Je l'ai voulu relativement sobre avec quelques animations sympas mais pas trop exagérées afin de sauvegarder les yeux des mes visiteurs, c'est à dire les votre. J’espère avoir réussi ! 😁",
-    webSiteUrl: 'https://rodolpheanger.fr',
+    gitHubUrl: 'https://github.com/Rodolpheanger/portfolio',
     img: portfolio,
     technos: [nextjs, react, ts, tailwind, figma],
   },
