@@ -28,97 +28,127 @@ export type Techno = {
   icon: StaticImageData;
 };
 
+export type TechoCategory = {
+  name: string;
+  list: Record<string, Techno>;
+};
+export type Technos = {
+  frontend: TechoCategory;
+  backend: TechoCategory;
+  environnement: TechoCategory;
+};
+
 export const technos = {
-  html: {
-    name: 'HTML 5',
-    icon: htmlIcon,
+  frontend: {
+    name: 'Front-End',
+    list: {
+      html: {
+        name: 'HTML 5',
+        icon: htmlIcon,
+      },
+      css: {
+        name: 'CSS 3',
+        icon: cssIcon,
+      },
+      sass: {
+        name: 'Sass',
+        icon: sassIcon,
+      },
+      js: {
+        name: 'Javascript',
+        icon: javascriptIcon,
+      },
+      ts: {
+        name: 'Typescript',
+        icon: typescriptIcon,
+      },
+      react: {
+        name: 'React',
+        icon: reactIcon,
+      },
+      nextjs: {
+        name: 'Next.js',
+        icon: nextIcon,
+      },
+      tanstackQuery: {
+        name: 'Tanstack Query',
+        icon: tanstackQuery,
+      },
+      zod: {
+        name: 'Zod',
+        icon: zod,
+      },
+      prisma: {
+        name: 'Prisma',
+        icon: prisma,
+      },
+      tailwind: {
+        name: 'Tailwind CSS',
+        icon: tailwindIcon,
+      },
+      styledcomponents: {
+        name: 'Styled Components',
+        icon: styledComponentsIcon,
+      },
+    },
   },
-  css: {
-    name: 'CSS 3',
-    icon: cssIcon,
+  backend: {
+    name: 'Back-End',
+    list: {
+      nodejs: {
+        name: 'Node.js',
+        icon: nodejsIcon,
+      },
+      mongodb: {
+        name: 'Mongo DB',
+        icon: mongodbIcon,
+      },
+      mysql: {
+        name: 'MySQL',
+        icon: mysqlIcon,
+      },
+      postgresql: {
+        name: 'PostgreSQL',
+        icon: postgresqlIcon,
+      },
+    },
   },
-  sass: {
-    name: 'Sass',
-    icon: sassIcon,
+  environnement: {
+    name: 'Environnement',
+    list: {
+      npm: {
+        name: 'Npm',
+        icon: npmIcon,
+      },
+      pnpm: {
+        name: 'Pnpm',
+        icon: pnpmIcon,
+      },
+      yarn: {
+        name: 'Yarn',
+        icon: yarnIcon,
+      },
+      git: {
+        name: 'Git',
+        icon: gitIcon,
+      },
+      github: {
+        name: 'GitHub',
+        icon: gitHubIcon,
+      },
+      vscode: {
+        name: 'VS Code',
+        icon: vscodeIcon,
+      },
+    },
   },
-  js: {
-    name: 'Javascript',
-    icon: javascriptIcon,
-  },
-  ts: {
-    name: 'Typescript',
-    icon: typescriptIcon,
-  },
-  nodejs: {
-    name: 'Node.js',
-    icon: nodejsIcon,
-  },
-  react: {
-    name: 'React',
-    icon: reactIcon,
-  },
-  nextjs: {
-    name: 'Next.js',
-    icon: nextIcon,
-  },
-  tanstackQuery: {
-    name: 'Tanstack Query',
-    icon: tanstackQuery,
-  },
-  zod: {
-    name: 'Zod',
-    icon: zod,
-  },
-  prisma: {
-    name: 'Prisma',
-    icon: prisma,
-  },
-  tailwind: {
-    name: 'Tailwind CSS',
-    icon: tailwindIcon,
-  },
-  styledcomponents: {
-    name: 'Styled Components',
-    icon: styledComponentsIcon,
-  },
-  mongodb: {
-    name: 'Mongo DB',
-    icon: mongodbIcon,
-  },
-  mysql: {
-    name: 'MySQL',
-    icon: mysqlIcon,
-  },
-  postgresql: {
-    name: 'PostgreSQL',
-    icon: postgresqlIcon,
-  },
-  npm: {
-    name: 'Npm',
-    icon: npmIcon,
-  },
-  pnpm: {
-    name: 'Pnpm',
-    icon: pnpmIcon,
-  },
-  yarn: {
-    name: 'Yarn',
-    icon: yarnIcon,
-  },
-  git: {
-    name: 'Git',
-    icon: gitIcon,
-  },
-  github: {
-    name: 'GitHub',
-    icon: gitHubIcon,
-  },
-  vscode: {
-    name: 'VS Code',
-    icon: vscodeIcon,
-  },
-  figma: {
-    name: 'Figma',
-    icon: figma,
+  ui: {
+    name: 'UI',
+    list: {
+      figma: {
+        name: 'Figma',
+        icon: figma,
+      },
+    },
   },
 };

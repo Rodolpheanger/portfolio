@@ -31,15 +31,12 @@ const {
   ts,
   react,
   nextjs,
-  nodejs,
-  mongodb,
-  mysql,
-  postgresql,
-  figma,
   tanstackQuery,
   zod,
   prisma,
-} = technos;
+} = technos.frontend.list;
+const { nodejs, mongodb, mysql, postgresql } = technos.backend.list;
+const { figma } = technos.ui.list;
 
 export const projects: Project[] = [
   {
