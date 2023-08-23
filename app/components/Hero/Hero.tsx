@@ -34,22 +34,22 @@ const Hero = () => {
               dans une reconversion professionnelle.
             </p>
             <p className="mb-2">
-              Passionné d'informatique, j'ai plongé tête la première dans le monde
-              merveilleux de la programmation web et je suis devenu accro.
+              Passionné d'informatique depuis l'adolescence, et ayant déjà eu par le
+              passé une "petite aventure" avec le développement web, j'ai plongé tête
+              la première dans le monde merveilleux du code et suis devenu accro.
             </p>
             <p className="mb-2">
-              J'ai donc décidé d'aller plus loin et de participer à une formation de
-              développeur web avec <strong>OpenClassrooms</strong>.
+              J'ai donc décidé d'aller plus loin et de participer à une formation
+              avec <strong>OpenClassrooms</strong>.
             </p>
             <p className="mb-2">
               Et devinez quoi ? Non seulement j'ai adoré, mais en plus j'ai obtenu
-              mon <strong>diplôme 🎉</strong>
+              mon diplôme de <strong>Développeur Web 🎉</strong>
             </p>
             <p className="mb-2">
-              Depuis, je me perfectionne quotidiennement dans diverses technologies
-              du développement web, telles que <strong>React</strong> ,
-              <strong>Next.js</strong> et leur écosystème, tout en cherchant mon
-              premier emploi dans ce domaine.
+              Depuis, je me perfectionne quotidiennement dans diverses technologies,
+              telles que <strong>React</strong>, <strong>Next.js</strong> et leur
+              écosystème, tout en cherchant mon premier emploi dans ce domaine.
             </p>
           </p>
         </div>
