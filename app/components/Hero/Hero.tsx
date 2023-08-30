@@ -49,7 +49,7 @@ const Hero = () => {
             <p className="mb-2">
               Depuis, je me perfectionne quotidiennement dans diverses technologies,
               telles que <strong>React</strong>, <strong>Next.js</strong> et leur
-              écosystème, tout en cherchant mon premier emploi dans ce domaine.
+              écosystème.
             </p>
           </p>
         </div>
