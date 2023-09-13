@@ -78,10 +78,6 @@ export const technos = {
         name: 'Zod',
         icon: zod,
       },
-      prisma: {
-        name: 'Prisma',
-        icon: prisma,
-      },
       tailwind: {
         name: 'Tailwind CSS',
         icon: tailwindIcon,
@@ -110,6 +106,10 @@ export const technos = {
       postgresql: {
         name: 'PostgreSQL',
         icon: postgresqlIcon,
+      },
+      prisma: {
+        name: 'Prisma',
+        icon: prisma,
       },
     },
   },

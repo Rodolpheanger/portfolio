@@ -22,20 +22,9 @@ export type Project = {
   technos?: Techno[];
 };
 
-const {
-  html,
-  css,
-  sass,
-  tailwind,
-  js,
-  ts,
-  react,
-  nextjs,
-  tanstackQuery,
-  zod,
-  prisma,
-} = technos.frontend.list;
-const { nodejs, mongodb, mysql, postgresql } = technos.backend.list;
+const { html, css, sass, tailwind, js, ts, react, nextjs, tanstackQuery, zod } =
+  technos.frontend.list;
+const { nodejs, mongodb, mysql, postgresql, prisma } = technos.backend.list;
 const { figma } = technos.ui.list;
 
 export const projects: Project[] = [
