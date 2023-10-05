@@ -1,18 +1,16 @@
-import Image from 'next/image';
-import photo from '~/public/image/photo_rodolphe.png';
 import ScrollToId from '../ScrollTo/ScrollToId';
 
 const Hero = () => {
   return (
     <section className="flex h-5/6 flex-col items-center justify-evenly">
       <div className=" flex flex-col items-center gap-[4vh] sm:w-4/5 sm:flex-row">
-        <Image
+        {/* <Image
           src={photo}
           width={700}
           height={700}
           alt="Photo de moi"
           className="w-1/2 sm:w-[25vw]"
-        />
+        /> */}
         <div className="flex flex-col  items-center gap-[4vh]">
           <h1 className=" flex flex-col font-bebas-neue text-4xl tracking-widest text-secondary sm:text-[6vw] sm:leading-[6vw]">
             <span className="mb-4 underline decoration-tertiary underline-offset-4 lg:underline-offset-[10px]">
