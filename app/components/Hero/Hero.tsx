@@ -5,13 +5,13 @@ import photo from '../../../public/image/avatar_rod.png';
 const Hero = () => {
   return (
     <section className="flex h-5/6 flex-col items-center justify-evenly">
-      <div className=" flex flex-col items-center gap-[4vh] sm:w-4/5 sm:flex-row">
+      <div className=" flex flex-col items-center gap-[4vh] sm:w-4/5 lg:flex-row">
         <Image
           src={photo}
           width={700}
           height={700}
-          alt="Photo de moi"
-          className="w-1/2 sm:w-[25vw]"
+          alt="Mon avatar, un barbu chauve souriant qui porte un t-shirt noir avec une tête de mort blanche."
+          className="w-1/2 md:w-[25vw]"
         />
         <div className="flex flex-col  items-center gap-[4vh]">
           <h1 className=" flex flex-col font-bebas-neue text-4xl tracking-widest text-secondary sm:text-[6vw] sm:leading-[6vw]">
