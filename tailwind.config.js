@@ -23,12 +23,10 @@ module.exports = {
       keyframes: {
         'appear-left': {
           '0%': { transform: 'translateX(-50vw) scale(0)', opacity: '0' },
-          '50%': { transform: 'translateX(-25vw)  scale(0.25)', opacity: '0.15' },
           '100%': { transform: 'translateX(0) scale(1)', opacity: '1' },
         },
         'appear-right': {
           '0%': { transform: 'translateX(50vw) scale(0)', opacity: '0' },
-          '50%': { transform: 'translateX(25vw)  scale(0.25)', opacity: '0.15' },
           '100%': { transform: 'translateX(0) scale(1)', opacity: '1' },
         },
         'appear-spin-left': {
@@ -46,15 +44,13 @@ module.exports = {
         },
       },
       animation: {
-        'appear-left':
-          'appear-left 1500ms 100ms cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards',
-        'appear-right':
-          'appear-right 1500ms 100ms cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards',
+        'appear-left': 'appear-left 1000ms 100ms  forwards',
+        'appear-right': 'appear-right 1000ms 100ms  forwards',
         'appear-spin-left':
-          'appear-spin-left 1500ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
+          'appear-spin-left 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
         'appear-spin-right':
-          'appear-spin-right 1500ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
-        'appear-scale': 'appear-scale 1500ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
+          'appear-spin-right 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
+        'appear-scale': 'appear-scale 1000ms cubic-bezier(0.4, 0, 0.2, 1) forwards',
       },
     },
   },
